@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<title> Peştera de gheață</title>
+<head>
+<link rel="stylesheet" href="style8.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+<div id="nav">
+<ul>
+	
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Alte obiective <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="tamina.html"> Cascada Tamina</a>
+			<a href="sinaia.html"> Cazino Sinaia </a>
+		</div>
+
+	
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Monumente <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="crucea.html"> Crucea eroilor</a>
+			<a href="grenada.html"> Monumentul "Ultima Grenadă" </a>
+		</div>
+		
+		</li>
+<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Pesteri si saline <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="pestera.html"> Peștera de gheață </a>
+			<a href="salina.html"> Salina Slănic </a>
+		</div>
+		
+		</li>	
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Muzee <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="posada.html"> Muzeul Cinegetic Posada</a>
+			<a href="grigorescu.html"> Casa Memoriala "Nicolae Grigorescu" </a>
+		</div>
+		
+	</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Biserici si manastiri <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="mansinaia.html"> Mănăstirea Sinaia</a>
+			<a href="cheia.html"> Mănăstirea Cheia </a>
+		</div>
+		
+		</li>
+		</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Cetati si castele <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="peles.html"> Castelul Peleş</a>
+			<a href="hasdeu.html"> Castelul Iulia Haşdeu </a>
+		</div>
+		
+		</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Cele mai populare <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="peles.html"> Castelul Peleş</a>
+			<a href="caraiman.html"> Manastirea Caraiman </a>
+		</div>
+		
+		</li>
+		
+		<li id="home"> <a href="index.html" data-transition="fade">Acasa</a></li>
+</ul>
+</div>
+<div id="afis">
+<div id="cont">
+<h1 style="text-align:center;margin:0">Peştera de gheață </h1>
+
+<p>Peştera de Gheaţă e o încăpere lungă şi îngustă, rece ca gheaţa, care coboară în munte. 
+
+Peştera s-a dezvoltat pe o fisură verticală în blocul de calcar. Are circa 50 metri lungime, dar se îngustează atît de tare încît nu poate fi parcursă de oricine. Intrarea e o crăpătură între două stînci care parcă stau să cadă şi printre care abia se poate strecura un om. 
+
+Zona coborită a pesterii pastrează în interior temperaturi scăzute tot timpul anului, chiar şi zăpadă. 
+
+Stancile de aici sunt unul dintre locurile favorite ale iubitorilor de căţărare. În lungul traseului care coboară, veţi trece pe lîngă un abrupt spectaculos cu numeroase microforme carstice: Prăpastia Urşilor.<br>
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+</div>
+<div id="map">
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(45.5684881,25.6652568);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  google.maps.event.addListener(marker,'click',function() {
+    var pos = map.getZoom();
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+    window.setTimeout(function() {map.setZoom(pos);},3000);
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfqYphfr5Oc34gCNbL1tPAUKMuoYNdUhM&callback=myMap"></script>
+
+</div>
+
+<div id="imag">
+
+<div class="row">
+  <div class="column">
+    <img src="p1.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="p2.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="p3.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="p4.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="p1.jpg" style="width:100%;height:50vh">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="p2.jpg" style="width:100%;height:50vh">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="p3.jpg" style="width:100%;height:50vh">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="p4.jpg" style="width:100%;height:50vh">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="p1.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="p2.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="p3.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="p4.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(4)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</div>
+</div>
+</body>
+</html>

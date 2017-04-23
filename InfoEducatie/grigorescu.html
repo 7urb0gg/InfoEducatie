@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Casa Memoriala Nicolae Grigorescu</title>
+<head>
+<link rel="stylesheet" href="style7.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+<div id="nav">
+<ul>
+	
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Alte obiective <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="tamina.html"> Cascada Tamina</a>
+			<a href="sinaia.html"> Cazino Sinaia </a>
+		</div>
+
+	
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Monumente <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="crucea.html"> Crucea eroilor</a>
+			<a href="grenada.html"> Monumentul "Ultima Grenadă" </a>
+		</div>
+		
+		</li>
+<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Pesteri si saline <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="pestera.html"> Peștera de gheață </a>
+			<a href="salina.html"> Salina Slănic </a>
+		</div>
+		
+		</li>	
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Muzee <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="posada.html"> Muzeul Cinegetic Posada</a>
+			<a href="grigorescu.html"> Casa Memoriala "Nicolae Grigorescu" </a>
+		</div>
+		
+	</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Biserici si manastiri <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="mansinaia.html"> Mănăstirea Sinaia</a>
+			<a href="cheia.html"> Mănăstirea Cheia </a>
+		</div>
+		
+		</li>
+		</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Cetati si castele <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="peles.html"> Castelul Peleş</a>
+			<a href="hasdeu.html"> Castelul Iulia Haşdeu </a>
+		</div>
+		
+		</li>
+		<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Cele mai populare <img class="sag" src="sag.png"> </img></a>
+		<div class="dropdown-content">
+			<a href="peles.html"> Castelul Peleş</a>
+			<a href="caraiman.html"> Manastirea Caraiman </a>
+		</div>
+		
+		</li>
+		
+		<li id="home"> <a href="index.html" data-transition="fade">Acasa</a></li>
+</ul>
+</div>
+<div id="afis">
+<div id="cont">
+<h1 style="text-align:center;margin:0">Casa Memorială Nicolae Grigorescu </h1>
+
+<p>Casa memorială Nicolae Grigorescu de la Câmpina este o casă-muzeu din orașul Câmpina, în care a trăit și pictat Nicolae Grigorescu (1838-1907).<br>
+Reconstituirea casei construită inițial de către pictor s-a desfășurat între 1954 - 1955, iar muzeul memorial (parter și etaj) a fost pus la dispoziția publicului larg în 1957.<br>
+Exteriorul casei este dominat de terasa de lemn care se întinde pe toată lungimea etajului, imprimându-i un aer cald și intim și amintind de foișoarele caselor țărănești românești. Terasa este sprijinită de console elegante de lemn.<br>
+Adăpostind tablouri remarcabile ale lui Nicolae Grigorescu, muzeul din Câmpina are un alt mare avantaj: acela de a prezenta o serie de lucrări importante din creația artistului, în cadrul inițial în care se aflau. Recrearea interioarelor și a casei în întregime este o idee extraordinară și o plăcere pentru vizitatori. Astfel, opera celui mai important artist român este mai ușor de urmărit și privit, de înțeles și plăcut. Atmosfera învăluie pe vizitator de la primii pași în casă și îl urmărește mult timp după ce a părăsit-o.<br>
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+</div>
+<div id="map">
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(45.1344935,25.7328578);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  google.maps.event.addListener(marker,'click',function() {
+    var pos = map.getZoom();
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+    window.setTimeout(function() {map.setZoom(pos);},3000);
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfqYphfr5Oc34gCNbL1tPAUKMuoYNdUhM&callback=myMap"></script>
+
+</div>
+
+<div id="imag">
+
+<div class="row">
+  <div class="column">
+    <img src="v1.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="v2.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="v3.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="v4.jpg" style="width:100%;height:25vh;position: relative;
+    bottom: -5vh;border:0.3vh solid black" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="v1.jpg" style="width:100%;height:50vh">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="v2.jpg" style="width:100%;height:50vh">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="v3.jpg" style="width:100%;height:50vh">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="v4.jpg" style="width:100%;height:50vh">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="v1.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="v2.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="v3.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="v4.jpg" style="width:100%;height: 15vh;" onclick="currentSlide(4)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</div>
+</div>
+</body>
+</html>
